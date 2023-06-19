@@ -1,0 +1,37 @@
+{
+    "name": "@bodil/opt-vitest",
+    "version": "1.0.0",
+    "description": "Vitest matchers for @bodil/opt",
+    "license": "MPL-2.0+",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bodil/opt-vitest.git"
+    },
+    "bugs": {
+        "url": "https://github.com/bodil/opt-vitest/issues"
+    },
+    "module": "./esm/mod.js",
+    "types": "./types/mod.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./types/mod.d.ts",
+                "default": "./esm/mod.js"
+            }
+        }
+    },
+    "scripts": {
+        "prepublish": "tsc",
+        "test": "vitest run"
+    },
+    "devDependencies": {
+        "@bodil/opt": ">=0.2.0",
+        "@vitest/expect": ">=0.31.0",
+        "vitest": ">=0.31.0"
+    },
+    "peerDependencies": {
+        "@bodil/opt": ">=0.2.0",
+        "@vitest/expect": ">=0.31.0",
+        "vitest": ">=0.31.0"
+    }
+}
